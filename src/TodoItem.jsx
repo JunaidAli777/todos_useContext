@@ -34,7 +34,7 @@ const TodoItem = ({ todo }) => {
             <div>
                 {isEditable ? (
                     <button
-                        className='cursor-pointer mr-4'
+                        className='cursor-pointer mr-4 text-green-500'
                         onClick={() => {
                             updateTodo(todo.id, editedTodo)
                             setIsEditable(false)
@@ -51,7 +51,7 @@ const TodoItem = ({ todo }) => {
                 )}
                 <button
                     onClick={() => deleteTodo(todo.id)}
-                    className="cursor-pointer">
+                    className="cursor-pointer text-red-500">
                     <MdDelete />
                 </button>
             </div>
